@@ -1,4 +1,6 @@
 # Installation de Prometheus Debian 12
+<p align = "center">
+<img src="https://github.com/user-attachments/assets/967adbf3-18fb-4591-81c0-43a37b2bc40b" width="200" height="200" />
 
 ```bash
 $ sudo groupadd --system prometheus
@@ -19,6 +21,7 @@ $ sudo chown -R prometheus:prometheus /etc/prometheus/consoles
 $ sudo cp /etc/prometheus/prometheus /usr/local/bin/
 $ sudo nano /etc/systemd/system/prometheus.service
 ```
+Ajouter dans le fichier Prometheus.service
 ```bash
 [Unit]
 Description=Prometheus
